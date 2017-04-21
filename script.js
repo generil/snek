@@ -1,4 +1,4 @@
-var canvas = document.getElementById('tetris'),
+var canvas = document.getElementById('snek'),
     context = canvas.getContext('2d');
 
 var width = canvas.width;
