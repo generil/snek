@@ -1,5 +1,5 @@
 body {
-  font-family: -apple-system, "BlinkMacSystemFont", "Helvetica Neue", "Helvetica", "Segoe UI", "Lucida Grande", "Ubuntu", sans-serif;
+    font-family: -apple-system, "BlinkMacSystemFont", "Helvetica Neue", "Helvetica", "Segoe UI", "Ubuntu", sans-serif;
 }
 
 #home {
@@ -26,6 +26,7 @@ button {
     width: 90px;
     margin: 10px 0 0 0;
 }
+
 button:hover {
     background-color: orange;
 }
