@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="styles/style.css">
-        <title>Snek</title>
-    </head>
-    <body>
-        <div class="home">
-            <canvas id="snek" width="350" height="350">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Snek</title>
+</head>
+<body>
+    <div class='game'>
+        <div id='home'>
+            <canvas id='mycanvas' width='350' height='350'>
             </canvas>
-            <p>Start the Snek</p>
-            <button id="btn">Start</button>
         </div>
-        <script src="script/setting.js"></script>
-        <script src="script/app.js"></script>
-        <script src="script/draw.js"></script>
-    </body>
+        <p>Press start and eat the pizza!</p>
+        <button id='btn'>START</button>
+    </div>
+
+    <script src="script/setting.js"></script>
+    <script src="script/draw.js"></script>
+    <script src="script/app.js"></script>
+</body>
 </html>
