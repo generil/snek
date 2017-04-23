@@ -1,5 +1,6 @@
 body {
     font-family: -apple-system, "BlinkMacSystemFont", "Helvetica Neue", "Helvetica", "Segoe UI", "Ubuntu", sans-serif;
+    background-color: #FFEB3B;
 }
 
 #home {
@@ -20,7 +21,7 @@ body {
 }
 
 button {
-    background-color: green;
+    background-color: #00E676;
     color: white;
     border: none;
     height: 75px;
@@ -33,11 +34,11 @@ button {
 }
 
 button:hover {
-    background-color: orange;
+    background-color: #FF1744;
 }
 
 button:disabled {
-    background-color: grey;
+    background-color: #FF5722;
 }
 
 .game {

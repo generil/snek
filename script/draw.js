@@ -1,17 +1,15 @@
 var drawModule = (function() {
 
     var bodysnek = function(x, y) {
-        context.fillStyle = 'green';
+        context.fillStyle = '#00E676';
         context.fillRect(x * snekSize, y * snekSize, snekSize, snekSize);
-        context.strokeStyle = 'darkgreen';
-        context.strokeRect(x * snekSize, y * snekSize, snekSize, snekSize);
+        // context.strokeStyle = 'darkgreen';
+        // context.strokeRect(x * snekSize, y * snekSize, snekSize, snekSize);
     }
 
     var pizza = function(x, y) {
-        context.fillStyle = 'yellow';
+        context.fillStyle = '#FF1744';
         context.fillRect(x * snekSize, y * snekSize, snekSize, snekSize);
-        context.fillStyle = 'red';
-        context.fillRect(x * snekSize + 1, y * snekSize + 1, snekSize - 2, snekSize - 2);
     }
 
     var scoreText = function() {
@@ -39,10 +37,8 @@ var drawModule = (function() {
     }
 
     var paint = function() {
-        context.fillStyle = 'lightgrey';
+        context.fillStyle = '#FFC107';
         context.fillRect(0, 0, w, h);
-        context.strokeStyle = 'black';
-        context.strokeRect(0, 0, w, h);
 
         btn.setAttribute('disabled', true);
 
