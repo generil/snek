@@ -16,8 +16,8 @@ var drawModule = (function() {
 
     var scoreText = function() {
         var score_text = "Score: " + score;
-        context.fillStyle = 'blue';
-        context.fillText(score_text, 145, h - 5);
+        var txt = document.getElementById('btn');
+        txt.innerHTML = score_text;
     }
 
     var drawsnek = function() {
@@ -55,7 +55,10 @@ var drawModule = (function() {
         if (snekX == -1 || snekX == w / snekSize || snekY == -1 || snekY == h / snekSize || checkCollision(snekX, snekY, snek)) {
             //restart game
             btn.removeAttribute('disabled', true);
-
+            var txt = document.getElementsByClassName('title');
+            txt[0].innerHTML = 'HECK YOU!!! 😬';
+            var txt = document.getElementById('btn');
+            txt.innerHTML = 'PLAY AGAIN';
             context.clearRect(0, 0, w, h);
             gameloop = clearInterval(gameloop);
             return;
@@ -115,6 +118,9 @@ var drawModule = (function() {
         drawsnek();
         createFood();
         gameloop = setInterval(paint, 80);
+
+        var txt = document.getElementsByClassName('title');
+        txt[0].innerHTML = '';
     }
 
     return {

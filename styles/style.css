@@ -11,13 +11,22 @@ body {
     background-color: lightblue;
 }
 
+.title {
+    text-align: center;
+    font-family: 'SF UI Display', -apple-system, "BlinkMacSystemFont", "Helvetica Neue", "Helvetica", "Segoe UI", "Ubuntu", sans-serif;
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
 button {
     background-color: green;
     color: white;
     border: none;
     height: 75px;
-    font-family: inherit;
-    font-size: 12pt;
+    font-family: 'SF UI Display', -apple-system, "BlinkMacSystemFont", "Helvetica Neue", "Helvetica", "Segoe UI", "Ubuntu", sans-serif;
+    font-size: 3em;
+    font-weight: 800;
     width: inherit;
     margin: 0 auto;
     display: block;
@@ -37,7 +46,7 @@ button:disabled {
     margin: auto;
     display: block;
     position: absolute;
-    top: -125px;
+    top: -300px;
     bottom: 0;
     left: 0;
     right: 0;
