@@ -56,7 +56,7 @@ var drawModule = (function() {
         if (snekX == -1 || snekX == w / snekSize || snekY == -1 || snekY == h / snekSize || checkCollision(snekX, snekY, snek)) {
             //restart game
             btn.removeAttribute('disabled', true);
-            document.getElementById('home').style.backgroundImage = 'url(assets/angrysnek.jpg)';
+            document.getElementById('home').style.backgroundImage = 'url(img/angrysnek.jpg)';
             document.getElementById('home').style.backgroundSize = '500px 400px';
             var txt = document.getElementsByClassName('title');
             txt[0].innerHTML = 'HECK YOU!!! 😬';
