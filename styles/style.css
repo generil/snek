@@ -3,28 +3,24 @@ body {
 }
 
 #home {
-    width: 350px;
-    height: 350px;
+    width: 500px;
+    height: 400px;
     background-image: url('../assets/snek.jpg');
-    background-size: auto 350px;
+    background-size: auto 500px;
     background-repeat: no-repeat;
     background-color: lightblue;
-    background-position: center center;
-    padding: 0;
-    margin: 3;
 }
 
 button {
     background-color: green;
     color: white;
     border: none;
-    bottom: 0;
-    height: 30px;
+    height: 75px;
     font-family: inherit;
     font-size: 12pt;
-    float: left;
-    width: 90px;
-    margin: 10px 0 0 0;
+    width: inherit;
+    margin: 0 auto;
+    display: block;
 }
 
 button:hover {
@@ -35,13 +31,14 @@ button:disabled {
     background-color: grey;
 }
 
-p {
-    font-weight: bold;
-    width: 250px;
-    margin: 18px 0 5px 8px;
-    float: left;
-}
-
 .game {
-    margin: 0 auto;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: -125px;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
