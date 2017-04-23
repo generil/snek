@@ -15,9 +15,16 @@ var drawModule = (function() {
     }
 
     var scoreText = function() {
-        var score_text = "Score: " + score;
+        if (score >= hiscore) {
+            hiscore = score;
+        }
+
+        var score_text = "SCORE: " + score;
+        var hiscore_text = "HISCORE: " + hiscore;
         var txt = document.getElementById('btn');
         txt.innerHTML = score_text;
+        var txt = document.getElementsByClassName('title');
+        txt[0].innerHTML = hiscore_text;
     }
 
     var drawsnek = function() {
@@ -118,9 +125,7 @@ var drawModule = (function() {
         drawsnek();
         createFood();
         gameloop = setInterval(paint, 80);
-
-        var txt = document.getElementsByClassName('title');
-        txt[0].innerHTML = '';
+        score = 0;
     }
 
     return {

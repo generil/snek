@@ -5,6 +5,7 @@ var snekSize = 10;
 var w = 500;
 var h = 400;
 var score = 0;
+var hiscore = 0;
 var snek;
 var snekSize = 10;
 var food;
