@@ -3,8 +3,6 @@ var drawModule = (function() {
     var bodysnek = function(x, y) {
         context.fillStyle = '#00E676';
         context.fillRect(x * snekSize, y * snekSize, snekSize, snekSize);
-        // context.strokeStyle = 'darkgreen';
-        // context.strokeRect(x * snekSize, y * snekSize, snekSize, snekSize);
     }
 
     var pizza = function(x, y) {
@@ -58,10 +56,12 @@ var drawModule = (function() {
         if (snekX == -1 || snekX == w / snekSize || snekY == -1 || snekY == h / snekSize || checkCollision(snekX, snekY, snek)) {
             //restart game
             btn.removeAttribute('disabled', true);
+            document.getElementById('home').style.backgroundImage = 'url(assets/angrysnek.jpg)';
+            document.getElementById('home').style.backgroundSize = '500px 400px';
             var txt = document.getElementsByClassName('title');
             txt[0].innerHTML = 'HECK YOU!!! 😬';
             var txt = document.getElementById('btn');
-            txt.innerHTML = 'PLAY AGAIN';
+            txt.innerHTML = 'PLAY SNEK AGAIN';
             context.clearRect(0, 0, w, h);
             gameloop = clearInterval(gameloop);
             return;
