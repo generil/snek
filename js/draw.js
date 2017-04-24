@@ -59,6 +59,8 @@ var drawModule = (function() {
             document.getElementById('home').style.backgroundImage = 'url(img/angrysnek.jpg)';
             document.getElementById('home').style.backgroundSize = '500px 400px';
             var txt = document.getElementsByClassName('title');
+            var snd = new Audio("audio/hiss.wav");
+            snd.play();
             txt[0].innerHTML = 'HECK YOU!!! 😬';
             var txt = document.getElementById('btn');
             txt.innerHTML = 'PLAY SNEK AGAIN';
@@ -72,8 +74,9 @@ var drawModule = (function() {
                 x: snekX,
                 y: snekY
             }; //Create a new head instead of moving the tail
+            var snd = new Audio("audio/pause.mp3");
+            snd.play();
             score++;
-
             createFood(); //Create new food
         } else {
             var tail = snek.pop(); //pops out the last cell
