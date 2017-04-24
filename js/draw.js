@@ -1,7 +1,7 @@
 var drawModule = (function() {
 
     var bodysnek = function(x, y) {
-        context.fillStyle = '#00E676';
+        context.fillStyle = '#2979FF';
         context.fillRect(x * snekSize, y * snekSize, snekSize, snekSize);
     }
 
