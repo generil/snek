@@ -8,3 +8,4 @@ var score = 0;
 var hiscore = 0;
 var snek;
 var food;
+var speed;

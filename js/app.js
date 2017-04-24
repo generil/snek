@@ -8,6 +8,7 @@
     document.onkeydown = function(event) {
         keyCode = window.event.keyCode;
         keyCode = event.keyCode;
+        console.log(keyCode);
 
         switch (keyCode) {
 

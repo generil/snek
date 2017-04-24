@@ -88,10 +88,12 @@ var drawModule = (function() {
         }
 
         pizza(food.x, food.y);
+
         scoreText();
     }
 
     var createFood = function() {
+
         food = {
             x: Math.floor((Math.random() * 30) + 1),
             y: Math.floor((Math.random() * 30) + 1)
@@ -120,7 +122,7 @@ var drawModule = (function() {
         direction = 'down';
         drawsnek();
         createFood();
-        gameloop = setInterval(paint, 80);
+        gameloop = setInterval(paint, 150);
         score = 0;
     }
 
