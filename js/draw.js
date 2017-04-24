@@ -125,7 +125,7 @@ var drawModule = (function() {
         direction = 'down';
         drawsnek();
         createFood();
-        gameloop = setInterval(paint, 150);
+        gameloop = setInterval(paint, 80);
         score = 0;
     }
 
